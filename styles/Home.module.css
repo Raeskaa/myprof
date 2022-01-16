@@ -114,3 +114,36 @@
     flex-direction: column;
   }
 }
+
+.hover-animation a {
+  position: relative;
+  text-decoration: none;
+  transition: color .4s ease-out;
+}
+
+.hover-animation a:hover {
+  color: #457DFB;
+  right: 0;
+  text-decoration: none;
+}
+
+.hover-animation a:hover:after {
+  border-color: #457DFB;
+  right: 0;
+}
+
+.hover-animation a:after {
+  border-radius: 1em;
+  border-top: .1em solid #2F56B0;
+  content: "";
+  position: absolute;
+    right: 100%;
+    bottom: .14em;
+    left: 0;
+  transition: right .4s cubic-bezier(0,.5,0,1),
+              border-color .4s ease-out;
+}
+
+.hover-animation a:hover:after {
+right: 0;
+}
