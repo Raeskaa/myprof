@@ -63,7 +63,7 @@ export default function Header() {
                         ml={{ base: -2 }}
                         display={{ base: 'flex', md: 'none' }}
                         ml={'15px'}
-                        mr={'109px'}
+                        mr={'40px'}
                     >
                         <IconButton
                             onClick={onToggle}
@@ -120,19 +120,20 @@ export default function Header() {
                             fontWeight={500}
                             fontFamily={'Inter'}
                             // variant={'link'}
-                            color={'black'}
-                            bg={'white'}
+                            color={'white'}
+                            bg={'black'}
                             href={'#'}
                             border={1}
                             borderStyle={'solid'}
                             borderColor={'black'}
                             _hover={{
-                                bg: '#F7FAFC',
+                                bg: 'white',
+                                color: 'black',
                             }}
                         >
                             Sign In
                         </Button>
-                        <Button
+                        {/* <Button
                             display={{ base: 'none', md: 'inline-flex' }}
                             fontSize={14}
                             fontWeight={500}
@@ -148,7 +149,7 @@ export default function Header() {
                             }}
                         >
                             Sign Up
-                        </Button>
+                        </Button> */}
                     </Stack>
                 </Flex>
 
