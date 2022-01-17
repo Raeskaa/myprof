@@ -12,6 +12,7 @@ import {
   useColorModeValue,
   createIcon,
 } from '@chakra-ui/react';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -84,6 +85,7 @@ export default function Home() {
           </Stack>
         </Stack>
       </Container>
+      <Footer />
     </>
   )
 }
