@@ -79,6 +79,7 @@ export default function Footer() {
             </Head>
             <Box
                 // bg={useColorModeValue('gray.50', 'gray.900')}
+                bg={'#FDFAF3'}
                 fontFamily={'Inter'}
                 color={useColorModeValue('gray.700', 'gray.200')}
             >
@@ -162,12 +163,16 @@ export default function Footer() {
                                     //     'green.800'
                                     // )}
                                     bg={'black'}
-                                    color={useColorModeValue(
-                                        'white',
-                                        'gray.800'
-                                    )}
+                                    // color={useColorModeValue(
+                                    //     'white',
+                                    //     'gray.800'
+                                    // )}
+                                    color={'white'}
+                                    border={'1px solid'}
+                                    borderColor={'blackAlpha.600'}
                                     _hover={{
-                                        bg: 'green.600',
+                                        bg: 'white',
+                                        color: 'black'
                                     }}
                                     aria-label="Subscribe"
                                     icon={<BiMailSend />}
