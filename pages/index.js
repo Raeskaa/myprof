@@ -28,17 +28,17 @@ export default function Home() {
             <div className={styles.container}>
             <div className={styles.bgWrap}>
                 <Header />
-                <Container maxW={'3xl'} marginTop={'100px'}>
+                <Container maxW={'3xl'} marginTop={'50px'}>
                     <Stack
                         as={Box}
                         textAlign={'center'}
-                        spacing={{ base: 8, md: 14 }}
+                        spacing={{ base: 8, md: '31px' }}
                         py={{ base: 20, md: 36 }}
                     >
                         <Heading
                             fontWeight={600}
-                            fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-                            lineHeight={'110%'}
+                            fontSize={{ base: '4xl', sm: '4xl', md: '6xl' }}
+                            lineHeight={'70px'}
                         >
                             Find out more about your <br />
                             {/* <Text as={'span'} color={'green.400'}> */}
