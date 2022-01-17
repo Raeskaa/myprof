@@ -35,7 +35,7 @@ const Logo = (props) => {
     );
 };
 
-const SocialButton = (children, label, href) => {
+const SocialButton = (props) => {
     return (
         <chakra.button
             bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
@@ -44,7 +44,7 @@ const SocialButton = (children, label, href) => {
             h={8}
             cursor={'pointer'}
             as={'a'}
-            href={href}
+            href={props.href}
             display={'inline-flex'}
             alignItems={'center'}
             justifyContent={'center'}
@@ -53,16 +53,16 @@ const SocialButton = (children, label, href) => {
                 bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
             }}
         >
-            <VisuallyHidden>{label}</VisuallyHidden>
-            {children}
+            <VisuallyHidden>{props.label}</VisuallyHidden>
+            {props.children}
         </chakra.button>
     );
 };
 
-const ListHeader = (children) => {
+const ListHeader = (props) => {
     return (
         <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
-            {children}
+            {props.children}
         </Text>
     );
 };
@@ -106,7 +106,7 @@ export default function Footer() {
                         <Link href={'#'}>Contact us</Link>
                         <Link href={'#'}>Pricing</Link>
                         <Link href={'#'}>Testimonials</Link>
-                    </Stack>
+                    </Stack> 
                     <Stack align={'flex-start'}>
                         <ListHeader>Support</ListHeader>
                         <Link href={'#'}>Help Center</Link>
