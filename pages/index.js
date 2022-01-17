@@ -103,7 +103,7 @@ export default function Home() {
                 </Container>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 }
