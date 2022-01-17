@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import {
     Box,
     chakra,
@@ -69,79 +70,113 @@ const ListHeader = (props) => {
 
 export default function Footer() {
     return (
-        <Box
-            bg={useColorModeValue('gray.50', 'gray.900')}
-            color={useColorModeValue('gray.700', 'gray.200')}
-        >
-            <Container as={Stack} maxW={'6xl'} py={10}>
-                <SimpleGrid
-                    templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 2fr' }}
-                    spacing={8}
-                >
-                    <Stack spacing={6}>
-                        <Box>
-                            <Logo
+        <>
+            <Head>
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
+                    rel="stylesheet"
+                />
+            </Head>
+            <Box
+                // bg={useColorModeValue('gray.50', 'gray.900')}
+                fontFamily={'Inter'}
+                color={useColorModeValue('gray.700', 'gray.200')}
+            >
+                <Container as={Stack} maxW={'6xl'} py={10}>
+                    <SimpleGrid
+                        templateColumns={{
+                            sm: '1fr 1fr',
+                            md: '2fr 1fr 1fr 2fr',
+                        }}
+                        spacing={8}
+                    >
+                        <Stack spacing={6}>
+                            <Box>
+                                {/* <Logo
                                 color={useColorModeValue('gray.700', 'white')}
-                            />
-                        </Box>
-                        <Text fontSize={'sm'}>
-                            © 2020 Chakra Templates. All rights reserved
-                        </Text>
-                        <Stack direction={'row'} spacing={6}>
-                            <SocialButton label={'Twitter'} href={'#'}>
-                                <FaTwitter />
-                            </SocialButton>
-                            <SocialButton label={'YouTube'} href={'#'}>
-                                <FaYoutube />
-                            </SocialButton>
-                            <SocialButton label={'Instagram'} href={'#'}>
-                                <FaInstagram />
-                            </SocialButton>
+                            /> */}
+                                <Text fontWeight={'600'} fontSize={'20px'}>
+                                    MyProf
+                                </Text>
+                            </Box>
+                            <Text
+                                fontSize={'14px'}
+                                fontWeight={'400'}
+                                lineHeight={'1.6'}
+                            >
+                                Copyright © 2022 MyProf
+                                <br />
+                                All rights reserved
+                            </Text>
+                            <Stack direction={'row'} spacing={6}>
+                                <SocialButton label={'Twitter'} href={'#'}>
+                                    <FaTwitter />
+                                </SocialButton>
+                                <SocialButton label={'YouTube'} href={'#'}>
+                                    <FaYoutube />
+                                </SocialButton>
+                                <SocialButton label={'Instagram'} href={'#'}>
+                                    <FaInstagram />
+                                </SocialButton>
+                            </Stack>
                         </Stack>
-                    </Stack>
-                    <Stack align={'flex-start'}>
-                        <ListHeader>Company</ListHeader>
-                        <Link href={'#'}>About us</Link>
-                        <Link href={'#'}>Blog</Link>
-                        <Link href={'#'}>Contact us</Link>
-                        <Link href={'#'}>Pricing</Link>
-                        <Link href={'#'}>Testimonials</Link>
-                    </Stack> 
-                    <Stack align={'flex-start'}>
-                        <ListHeader>Support</ListHeader>
-                        <Link href={'#'}>Help Center</Link>
-                        <Link href={'#'}>Terms of Service</Link>
-                        <Link href={'#'}>Legal</Link>
-                        <Link href={'#'}>Privacy Policy</Link>
-                        <Link href={'#'}>Satus</Link>
-                    </Stack>
-                    <Stack align={'flex-start'}>
-                        <ListHeader>Stay up to date</ListHeader>
-                        <Stack direction={'row'}>
-                            <Input
-                                placeholder={'Your email address'}
-                                bg={useColorModeValue(
-                                    'blackAlpha.100',
-                                    'whiteAlpha.100'
-                                )}
-                                border={0}
-                                _focus={{
-                                    bg: 'whiteAlpha.300',
-                                }}
-                            />
-                            <IconButton
-                                bg={useColorModeValue('green.400', 'green.800')}
-                                color={useColorModeValue('white', 'gray.800')}
-                                _hover={{
-                                    bg: 'green.600',
-                                }}
-                                aria-label="Subscribe"
-                                icon={<BiMailSend />}
-                            />
+                        <Stack align={'flex-start'}>
+                            <ListHeader fontSize={'20'} fontWeight={'500'}>
+                                Reach Us
+                            </ListHeader>
+                            <Link href={'#'}>hello@myprof.com</Link>
+                            <Link href={'#'}>+91 1234567890</Link>
+                            {/* <Link href={'#'}>Contact us</Link>
+                            <Link href={'#'}>Pricing</Link>
+                            <Link href={'#'}>Testimonials</Link> */}
                         </Stack>
-                    </Stack>
-                </SimpleGrid>
-            </Container>
-        </Box>
+                        <Stack align={'flex-start'}>
+                            <ListHeader fontSize={'20'} fontWeight={'500'}>
+                                Company
+                            </ListHeader>
+                            <Link href={'#'}>About Us</Link>
+                            <Link href={'#'}>Contact Us</Link>
+                            <Link href={'#'}>Privacy Policy</Link>
+                        </Stack>
+                        <Stack align={'flex-start'}>
+                            <ListHeader>Join Us</ListHeader>
+                            <Stack direction={'row'}>
+                                <Input
+                                    placeholder={'Your email address'}
+                                    // bg={useColorModeValue(
+                                    //     'blackAlpha.100',
+                                    //     'whiteAlpha.100'
+                                    // )}
+                                    bg={'#FDFAF3'}
+                                    border={'1px solid'}
+                                    borderColor={'blackAlpha.300'}
+                                    _focus={{
+                                        bg: 'whiteAlpha.300',
+                                        border: '1px solid',
+                                        borderColor: 'blackAlpha.600'
+                                    }}
+                                />
+                                <IconButton
+                                    // bg={useColorModeValue(
+                                    //     'green.400',
+                                    //     'green.800'
+                                    // )}
+                                    bg={'black'}
+                                    color={useColorModeValue(
+                                        'white',
+                                        'gray.800'
+                                    )}
+                                    _hover={{
+                                        bg: 'green.600',
+                                    }}
+                                    aria-label="Subscribe"
+                                    icon={<BiMailSend />}
+                                />
+                            </Stack>
+                        </Stack>
+                    </SimpleGrid>
+                </Container>
+            </Box>
+        </>
     );
 }

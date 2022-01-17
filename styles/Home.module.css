@@ -1,5 +1,16 @@
 .container {
-  padding: 0 2rem;
+  height: 100vh;
+  background: linear-gradient(to bottom, #FDFAF3, white);
+}
+
+.bgWrap {
+  height: 100%;
+  width: 100%;
+  background: url('../public/bg.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .main {

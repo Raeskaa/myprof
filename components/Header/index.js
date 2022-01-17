@@ -48,7 +48,7 @@ export default function Header() {
             </Head>
             <Box>
                 <Flex
-                    bg={useColorModeValue('#FDFAF3', 'gray.800')}
+                    // bg={useColorModeValue('#FDFAF3', 'gray.800')}
                     color={useColorModeValue('gray.600', 'white')}
                     minH={'60px'}
                     mt={'5px'}
