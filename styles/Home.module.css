@@ -7,6 +7,7 @@
   height: 100%;
   width: 100%;
   background: url('../public/bg.png') no-repeat center center;
+  background-position: right 50% bottom 15%; /* Clipping Background from Bottom, centering and making it go down by 15% of its length */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -157,4 +158,41 @@
 
 .hover-animation a:hover:after {
 right: 0;
+}
+
+.iitgTop {
+  width: fit-content;
+  margin: 0 auto;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  /* margin-top: 11px; */
+  /* background: #FDFAF3; */
+}
+
+.bgWrapLogin {
+  height: 100%;
+  width: 100%;
+  background: url('../public/Sign In page_auto_x2 (1).jpg') no-repeat center center;
+  background-position: bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+/* @media only screen and (max-width: 48em) {
+  
+} */
+
+.loginCardWrapper {
+  max-height: 464px;
+  max-width: 505px;
+  height: 100%;
+  width: 100%;
+  background: #FFFEFC;
+  border: 0.5px solid #878787;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 64px rgba(0,0,0,0.05);
+  border-radius: 10px;
 }

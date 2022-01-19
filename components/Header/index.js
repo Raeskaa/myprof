@@ -51,7 +51,7 @@ export default function Header() {
                     // bg={useColorModeValue('#FDFAF3', 'gray.800')}
                     color={useColorModeValue('gray.600', 'white')}
                     minH={'60px'}
-                    mt={'5px'}
+                    // mt={'5px'}
                     px={{ base: 0 }}
                     borderBottom={1}
                     // borderStyle={'solid'}

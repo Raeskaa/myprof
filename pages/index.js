@@ -20,87 +20,89 @@ export default function Home() {
         <>
             <Head>
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
+                    href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Caveat:wght@700&display=swap"
                     rel="stylesheet"
                 />
             </Head>
 
             <div className={styles.container}>
-            <div className={styles.bgWrap}>
-                <Header />
-                <Container maxW={'3xl'} marginTop={'50px'}>
-                    <Stack
-                        as={Box}
-                        textAlign={'center'}
-                        spacing={{ base: 8, md: '31px' }}
-                        py={{ base: 20, md: 36 }}
-                    >
-                        <Heading
-                            fontWeight={600}
-                            fontSize={{ base: '4xl', sm: '4xl', md: '6xl' }}
-                            lineHeight={'70px'}
+                <div className={styles.bgWrap}>
+                    <Header />
+                    <Container maxW={'3xl'} marginTop={'50px'}>
+                        <Stack
+                            as={Box}
+                            textAlign={'center'}
+                            spacing={{ base: 8, md: '31px' }}
+                            py={{ base: 20, md: 36 }}
                         >
-                            Find out more about your <br />
-                            {/* <Text as={'span'} color={'green.400'}> */}
-                            upcoming courses
-                            {/* </Text> */}
-                        </Heading>
-                        {/* <Text color={'gray.500'}>
+                            <Heading
+                                fontFamily={'Inter'}
+                                fontWeight={700}
+                                fontSize={{ base: '4xl', sm: '4xl', md: '6xl' }}
+                                lineHeight={'70px'}
+                            >
+                                Find out more about your <br />
+                                {/* <Text as={'span'} color={'green.400'}> */}
+                                upcoming courses
+                                {/* </Text> */}
+                            </Heading>
+                            {/* <Text color={'gray.500'}>
             Monetize your content by charging your most loyal readers and reward
             them loyalty points. Give back to your loyal readers by granting
             them access to your pre-releases and sneak-peaks.
           </Text> */}
-                        <Stack
-                            direction={'column'}
-                            spacing={3}
-                            align={'center'}
-                            alignSelf={'center'}
-                            position={'relative'}
-                        >
-                            <Button
-                                colorScheme={'black'}
-                                bg={'black'}
-                                // rounded={'full'}
-                                px={6}
-                                _hover={{
-                                    bg: 'white',
-                                    color: 'black',
-                                    border: 1,
-                                    borderStyle: 'solid',
-                                    borderColor: 'black',
-                                }}
+                            <Stack
+                                direction={'column'}
+                                spacing={3}
+                                align={'center'}
+                                alignSelf={'center'}
+                                position={'relative'}
                             >
-                                Get Started
-                            </Button>
-                            {/* <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
+                                <Button
+                                    fontFamily={'Inter'}
+                                    colorScheme={'black'}
+                                    bg={'black'}
+                                    // rounded={'full'}
+                                    px={6}
+                                    _hover={{
+                                        bg: 'white',
+                                        color: 'black',
+                                        border: 1,
+                                        borderStyle: 'solid',
+                                        borderColor: 'black',
+                                    }}
+                                >
+                                    Get Started
+                                </Button>
+                                {/* <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
               Learn more
             </Button> */}
-                            <Box>
-                                <Icon
-                                    as={Arrow}
-                                    color={useColorModeValue(
-                                        'gray.800',
-                                        'gray.300'
-                                    )}
-                                    w={71}
-                                    position={'absolute'}
-                                    right={-71}
-                                    top={'10px'}
-                                />
-                                <Text
-                                    fontSize={'lg'}
-                                    fontFamily={'Caveat'}
-                                    position={'absolute'}
-                                    right={'-110px'}
-                                    top={'-15px'}
-                                    transform={'rotate(10deg)'}
-                                >
-                                    Because why not?
-                                </Text>
-                            </Box>
+                                <Box>
+                                    <Icon
+                                        as={Arrow}
+                                        color={useColorModeValue(
+                                            'gray.800',
+                                            'gray.300'
+                                        )}
+                                        w={71}
+                                        position={'absolute'}
+                                        right={-71}
+                                        top={'10px'}
+                                    />
+                                    <Text
+                                        fontSize={'lg'}
+                                        fontFamily={'Caveat'}
+                                        position={'absolute'}
+                                        right={'-110px'}
+                                        top={'-15px'}
+                                        transform={'rotate(10deg)'}
+                                    >
+                                        Because why not?
+                                    </Text>
+                                </Box>
+                            </Stack>
                         </Stack>
-                    </Stack>
-                </Container>
+                    </Container>
                 </div>
             </div>
             {/* <Footer /> */}
